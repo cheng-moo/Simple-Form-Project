@@ -2,5 +2,5 @@
 A project on MDN
 ##
 Learned
- - font-face
+ - font-face and how to generate webkit [fontsquirrel](https://www.fontsquirrel.com/)
  - background image
