@@ -21,11 +21,11 @@ body {
 }
 form {
     position: relative;
-    width: 740px;
+    width: 760px;
     height: 498px;
     margin: 0 auto;
     padding: 1em;
-    background: #FFF url(background.jpg);
+    background: #FFF url(bg-image/background.jpg);
 
     /* create our grid */
     display: grid;
@@ -35,6 +35,8 @@ form {
 }
 h1 {
     font: 1em 'typewriter', monospace;
+    align-self: flex-end;
+    
 }
 #message {
     grid-row: 1/5;
@@ -60,10 +62,28 @@ input:focus, textarea:focus {
 textarea {
     display: block;
     padding: 10px;
-    margin: 10px 0 0 -10px;
+    margin: 10px 0 0 0;
     width: 100%;
     height: 90%;
     border-right: 1px solid;
     /* resize: none; */
     overflow: auto;
+}
+button {
+    padding: 5px;
+    font: bold .6em sans-serif;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-1.5deg);
+}
+button:after {
+    content: ' >>>';
+}
+button:hover,
+button:focus {
+    outline: none;
+    background: #000;
+    color: #fff;
 }
